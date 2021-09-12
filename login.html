@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Login | Vivaan's Profile</title>
+<link rel="stylesheet" href="main.css">
 </head>
 <body><script>
 import GoTrue from 'gotrue.js';
@@ -13,7 +14,11 @@ auth = new GoTrue({
   audience: '',
   setCookie: true,
 });</script>
-
-
+<input id=email><br><input id=password type=password><button onclick="auth
+  .login(email.value, password.value, true)
+  .then((response) => {
+    showMessage(`Success! Response: ${JSON.stringify({ response })}`, form);
+  })
+  .catch((error) => showMessage(`Failed :( ${JSON.stringify(error)}`, form));">Log in/Sign up</button>
 </body>
 </html>
