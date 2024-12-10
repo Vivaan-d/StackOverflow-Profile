@@ -1,2 +1,2 @@
 # My Profile
-The stackoverflow profile hosted at https://vivaan-stackoverflow.ml
+My profile for many apps hosted at https://vivaan-d.netlify.app
